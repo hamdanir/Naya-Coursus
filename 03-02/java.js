@@ -12,7 +12,7 @@ console.log("abcd");
 
         a = 10;
         console.log(a);
-        console.log(typeof a, a);
+        console.log(typeof a);
 
         c = 5;
         console.log(c);

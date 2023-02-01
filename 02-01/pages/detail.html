@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY Project</title>
+
+    <!-- Fonst -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,700&family=Roboto+Slab:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../style/detail.css"/>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Rent <span>Car</span></a>
+
+      <div class="navbar-nav">
+        <a href="./index.html">Beranda</a>
+        <a href="./katalog.html">Rental Mobil</a>
+        <a href="./motor.html">Rental Motor</a>
+        <a href="#Promo">Promo</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#contact">Contact</a>
+        <!-- <a href="#" id="humberger-menu"><i data-feather="menu"></i></a> -->
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- Top Start -->
+    <section id="top" class="top">
+        <div class="top-tittle">
+          <h1>
+            CARI MOBIL 
+          </h1>
+
+        </div>
+        <div class="top-cari">
+          <div class="top-box">
+            <div class="top-label">
+              <label for="">Jenis Kendaraan</label>
+            </div>
+            <div>
+              <input type="text" placeholder="Jenis">
+            </div> 
+          </div>
+          <div class="top-box">
+            <div class="top-label">
+              <label for="">Kapasitas</label>
+            </div>
+            <div>
+              <input type="number" placeholder="Kapasitas">
+            </div> 
+          </div>
+          <div class="top-box">
+            <div class="top-label">
+              <label for="">Start</label>
+            </div>
+            <div>
+              <input type="date" placeholder="Start">
+            </div> 
+          </div>
+          <div class="top-box">
+            <div class="top-label">
+              <label for="">End</label>
+            </div>
+            <div>
+              <input type="date" placeholder="End">
+            </div> 
+          </div>
+          <!-- <i data-feather="search"></i> -->
+
+        </div>
+      </section>
+    <!-- Top End -->
+
+    <!-- Detail Start -->
+    <section class="detail">
+        <div class="detail-box">
+            <div class="detail-img">
+                <img src="../img/1.png" alt="gambar 1">
+            </div>
+            <div class="detail-tittle">
+                <h1>New Innova</h1>
+            </div>
+            <div class="detail-unit">
+                <div class="info-unit">
+                    <p>Tahun</p>
+                    <p class="info">2022</p>
+                </div>
+                <div class="info-unit">
+                    <p>Kapasitas</p>
+                    <p class="info">7 Orang</p>
+                </div>
+                <div class="info-unit">
+                    <p>Nopol</p>
+                    <p class="info">Genap</p>
+                </div>
+                <div class="info-unit">
+                    <p>BBM</p>
+                    <p class="info">Solar</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-price">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="keterangan">Keterangan</th>
+                        <th class="harga">Harga Sewa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="keterangan">Lepas Kunci Half Day</td>
+                        <td class="harga">Rp. 450.000</td>
+                    </tr>
+                    <tr>
+                        <td class="keterangan">Lepas Kunci Full Day</td>
+                        <td class="harga">Rp. 550.000</td>
+                    </tr>
+                    <tr>
+                        <td class="keterangan">Mobil + Driver + FullDay</td>
+                        <td class="harga">Rp. 750.000</td>
+                    </tr>
+                    <tr>
+                        <td class="keterangan">Mobil + Driver + FullDay + Full BBM</td>
+                        <td class="harga">Rp. 800.000</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            <a href="#">
+                <button>Booking</button>
+            </a>
+        </div>
+    </section>
+    <!-- Detail End -->
+
+
+
+    <!-- Footer Start -->
+    <section class="footer">
+        <div class="foot">
+          <div class="foot-logo">
+            <a href="#" class="logo-foot">Rent <span>Car</span></a>
+          </div>
+        </div>
+      
+        <div class="foot-desc">
+          <div class="foot-desc-phone">
+            <i class='bx bxl-whatsapp bx-md'></i>
+            <p>086754436373</p>
+          </div>
+          <div class="foot-desc-phone">
+            <i data-feather="map-pin"></i>
+            <p>Ngemplak, Yogyakarta</p>
+            
+          </div>
+      
+        </div>
+      
+      </section>
+      <!-- Footer End -->
+          <!-- feather icon -->
+    <script>
+    feather.replace();
+  </script>
+  
+  <!-- java script -->
+  <script src="../js/script.js"></script>
+  </body>
+  </html>

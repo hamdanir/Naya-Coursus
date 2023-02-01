@@ -1,0 +1,159 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.topnav {
+    background-color: rgba(247, 22, 22, 0.582);
+    overflow: hidden;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav label {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav label:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: rgb(70, 69, 69);
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+.aboutme {
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: relative;
+}
+
+
+.aboutme p {
+    width: 500px;
+}
+
+.aboutme button {
+    display: flex;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    width: 120px;
+    align-items: center;
+    align-content: center;
+    opacity: 80%;
+}
+
+.aboutme button img {
+    align-items: center;
+}
+
+
+.projects {
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.projects a {
+    color: #f2f2f2;
+}
+.contact {
+    color: #ddd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.contact i img {
+    align-items: center;
+    
+}
+.contact img {
+    width: 60px;
+    height: 50px;
+    padding-left: 20px;
+    
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.btn {
+    background-color: aqua;
+    align-items: center;
+    align-content: center;
+}

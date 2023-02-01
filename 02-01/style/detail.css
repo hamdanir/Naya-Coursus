@@ -1,0 +1,346 @@
+:root {
+    --primary: #D5B06A;
+    --bg: #252523;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+  }
+  
+  /* navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #8a6744;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+  }
+  
+  .navbar .navbar-logo span {
+    color: var(--primary);
+  }
+  
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: var(--primary);
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: var(--primary);
+  }
+  /* Navbar end */
+
+/* Top start */
+.top {
+    flex-wrap: wrap;
+  }
+   .top .top-tittle {
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+   }
+  
+   .top .top-tittle h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    font-family: poppins;
+   }
+  
+  .top .top-cari {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  
+  .top .top-cari input {
+    height: 2.5rem;
+    width: 15.5rem;
+    border-radius: 20px;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .top .top-cari .top-box {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top .top-cari .top-box .top-label {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .top .top-cari .top-box .top-label label {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  /* Top End */
+
+  /* detail start */
+  .detail {
+    display: flex;
+    padding: 0 2rem;
+  }
+
+  .detail .detail-box {
+    display: block;
+    background-color: #4e4e4e;
+    width: 500px;
+    height: 520px;
+    
+    
+  }
+
+  .detail .detail-box .detail-img img {
+    height: 300px;
+  }
+
+  .detail .detail-box .detail-tittle {
+    display: flex;
+    justify-content: center;
+  }
+  .detail .detail-box .detail-tittle h1 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .detail .detail-box .detail-unit {
+    display: block;
+  }
+
+  .detail .detail-box .detail-unit .info-unit {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+  }
+
+  .detail .detail-box .detail-unit .info-unit p {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+
+  .detail .detail-box .detail-unit .info-unit .info {
+    color: var(--primary);
+  }
+
+  .detail .detail-price table {
+    padding: 0 2rem;
+  }
+  .detail .detail-price th {
+    font-size: 2.3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+
+  .detail .detail-price .keterangan {
+    width: 500px;
+    text-align: left;
+    
+  }
+
+  .detail .detail-price .harga {
+    width: 200px;
+    text-align: center;
+  }
+
+  .detail .detail-price td {
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .detail .detail-price a {
+    text-decoration: none;
+    padding: 2rem 5rem;
+  }
+
+  .detail .detail-price button {
+    width: 120px;
+    height: 50px;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    border-radius: 50px;
+  }
+
+
+  /* detail end */
+
+  /* Footer start */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary);
+  }
+  
+  
+  .footer .foot .foot-logo {
+    padding: 2rem 4rem;
+  }
+  .footer .foot .logo-foot {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+    
+  }
+  
+  .footer .foot .logo-foot span {
+    color: var(--bg);
+  }
+  
+  .footer .foot-desc {
+    display: block;
+    padding: 2rem 2rem;
+  }
+  
+  .footer .foot-desc .foot-desc-phone {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer .foot-desc .foot-desc-phone p {
+    font-size: 1.2rem;
+    color: var(--bg);
+    font-weight: bold;
+  }
+  
+  /* Footer end */
+  
+  /* media Queries */
+  
+  /* Laptop */
+  @media (max-width: 1366px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+  
+    #humberger-menu {
+      display: inline-block;
+    }
+  
+    .navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #fff;
+      width: 30rem;
+      height: 100vh;
+    }
+  
+    .navbar .navbar-nav.active {
+      right: 0;
+    }
+  
+    .navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  
+    .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
+  
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
+  
+    .about .row {
+      flex-wrap: wrap;
+    }
+    
+    .about .row .about-img img {
+      height: 24rem;
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    .about .row .content {
+      padding: 0;
+    }
+  
+    .about .row .content h3 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+  
+    .about .row .content p {
+      font-size: 1.6rem;
+    }
+  }
+  
+  
+  
+  /* Mobile */
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  }

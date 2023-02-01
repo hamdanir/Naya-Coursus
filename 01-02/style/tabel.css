@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+header {
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: relative;
+}
+h1 {
+    color: aliceblue;
+    
+}
+
+.tb {
+    overflow-x:auto;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: relative;
+}
+
+.tb th {
+    background-color: #04AA6D;
+    color: white;
+    width: auto;
+}
+
+.tb td {
+    color: aliceblue;
+    width: auto;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}

@@ -9,8 +9,15 @@ let ac = 5;
 let r = 5;
 let d = 10;
 let pi = 3.14;
-// console.log("alas = ${alas}");
-// console.log('tinggi = ');
+
+console.log('alas =', alas);
+console.log('tinggi =', tinggi);
+console.log('lebar =', l);
+console.log('sisi AB =', ab);
+console.log('sisi BC =', bc);
+console.log('sisi AC=', ac);
+console.log('jari-jari =', r);
+console.log('diameter =', d);
 
 // Luas Segitiga
 console.log("luas Segitiga");

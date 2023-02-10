@@ -1,20 +1,21 @@
-let alas = 2;
-let tinggi = 2;
+let alas = 5;
+let tinggi = 10;
 
 function luasSegitiga(alas, tinggi) {
     return 0.5 * alas * tinggi;
 }
 
-function jenis (x) {
-    if (x % 2 === 0) {
-        return 'genap';
-    }
-    if (x % 2 !== 0) {
-        return 'ganjil';
-    }
+function jenis(x) {
+    return x % 2 === 0 ? 'genap' : 'ganjil';
+    // if (x % 2 === 0) {
+    //     return 'genap';
+    // }
+    // else {
+    //     return 'ganjil';
+    // }
 }
 
-function grade (x) {
+function grade(x) {
     if (x == 0) {
         return 'F';
     }
@@ -35,22 +36,23 @@ function grade (x) {
     }
 }
 
+console.log(luasSegitiga(alas, tinggi));
 console.log(jenis(luasSegitiga(alas, tinggi)));
 console.log(grade(luasSegitiga(alas, tinggi)));
 
 // Perulangan
 console.log("perulangan angka genap dengan For");
-for (var i = luasSegitiga(alas, tinggi); i <= 10; i++) {
+for (var i = luasSegitiga(alas, tinggi); i <= 30; i++) {
     if (i % 2 === 0) {
-      console.log(i);
+        console.log(i);
     }
-  };
+};
 
-  console.log("perulangan angka Ganjil dengan While");
-  var i = -10;
-  while (i <= luasSegitiga(alas, tinggi)) {
+console.log("perulangan angka Ganjil dengan While");
+var i = -10;
+while (i <= luasSegitiga(alas, tinggi)) {
     if (i % 2 !== 0) {
-      console.log(i);
+        console.log(i);
     }
     i++;
-  }
+}

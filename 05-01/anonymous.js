@@ -40,5 +40,22 @@ let hasil = (luas) => {
 luasSegitiga(10, 20, hasil);
 
 
+// Perulangan
+console.group('Perulangan');
+let genap = (angka) => {
+    return angka % 2 == 0;
+}
+
+let angkaGenap = () => {
+    for (let i = -10; i <= 10; i++) {
+        if (genap(i)) {
+            console.log(i);
+        }
+    }
+}
+
+angkaGenap();
+
+
 
 

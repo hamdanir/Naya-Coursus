@@ -16,11 +16,16 @@
 // console.log(siswa);
 // console.log(murid);
 
-const car = { type: 'suv', merk: 'fortuner', bbm: 'solar', seat: 7 };
-const bike = { type: 'hyper', merk: 'h2', seat: 2, roda: 2 };
+const car = {
+    type: 'suv', merk: 'fortuner',
+    bbm: 'solar', seat: 7, roda: new Set()
+};
+// ada nilai2 yg dianggap true dan false, -1 kebawah dan 1 keatas dianggap truthy
+const bike = {
+    type: 'hyper', merk: 'h2',
+    seat: 2, roda: 2
+};
 // membuat fungsi untuk mngecek apakah object tersebut key tertentu atau tidak
-
-
 let validasi = (obj, keys) => {
     if (obj[keys]) {
         return true;
@@ -30,16 +35,20 @@ let validasi = (obj, keys) => {
     }
 }
 
+// 'in js', PR memeperbaiki function validasi 
 console.log(validasi(car, 'roda'));
 // console.log(validasi(bike, 'roda'));
 
 // Soal 2 : tampilkan hasil penjumlahan dari angka yang ada di dalam object
-const siswa = { nama: 'kung', harian: 20, uts: 40, uas: 60 };
+const siswa = {
+    nama: 'kung', harian: 20,
+    uts: 40, uas: 60
+};
 
 let sum = (x) => {
     let sum = 0;
     for (let val in x) {
-        if (typeof x[val] === 'number') {
+        if (typeof x[val] == 'number') {
             sum += x[val];
         }
     }

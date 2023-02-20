@@ -9,3 +9,7 @@
 
 3. Keyword this
 
+
+### Tugas 
+1. Salin function luas dan keliling bangun datar kedalam class
+

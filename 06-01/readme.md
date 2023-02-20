@@ -12,4 +12,5 @@
 
 ### Tugas 
 1. Salin function luas dan keliling bangun datar kedalam class
+2. Merubah / menambahkan / mengganti class sebelumnya menjadi memiliki dan menggunakan constructor
 

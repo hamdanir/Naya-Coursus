@@ -39,8 +39,8 @@ class lingkaran {
     keliling = () => 3.14 * (this.jariJari + this.jariJari);
 };
 const bunder = new lingkaran(3);
-console.log(bunder.luas());
-console.log(bunder.keliling());
+console.log('luas lingkaran =', bunder.luas());
+console.log('keliling lingkaran=', bunder.keliling());
 
 class persegi {
     constructor(panjang, lebar) {
@@ -52,5 +52,5 @@ class persegi {
     keliling = () => (this.panjang + this.lebar) * 2;
 };
 const adudu = new persegi(2, 4);
-console.log(adudu.luas());
-console.log(adudu.keliling());
+console.log('luas persegi =', adudu.luas());
+console.log('keliling persegi =', adudu.keliling());

@@ -18,7 +18,7 @@
 
 const car = {
     type: 'suv', merk: 'fortuner',
-    bbm: 'solar', seat: 7, roda: new Set()
+    bbm: 'solar', seat: 7, roda: 0
 };
 // ada nilai2 yg dianggap true dan false, -1 kebawah dan 1 keatas dianggap truthy
 const bike = {
@@ -35,8 +35,17 @@ let validasi = (obj, keys) => {
     }
 }
 
+// PR nya kemarin
+check = (obj, keys) => {
+    if (keys in obj === true) {
+        return 'ono';
+    }
+    else {
+        return 'ra ono';
+    }
+}
 // 'in js', PR memeperbaiki function validasi 
-console.log(validasi(car, 'roda'));
+console.log(check(car, 'roda'));
 // console.log(validasi(bike, 'roda'));
 
 // Soal 2 : tampilkan hasil penjumlahan dari angka yang ada di dalam object

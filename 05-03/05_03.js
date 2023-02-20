@@ -34,6 +34,7 @@ let validasi = (obj, keys) => {
         return false;
     }
 }
+console.log(validasi(car, 'roda'));
 
 // PR nya kemarin
 check = (obj, keys) => {
@@ -46,6 +47,7 @@ check = (obj, keys) => {
 }
 // 'in js', PR memeperbaiki function validasi 
 console.log(check(car, 'roda'));
+
 // console.log(validasi(bike, 'roda'));
 
 // Soal 2 : tampilkan hasil penjumlahan dari angka yang ada di dalam object

@@ -10,7 +10,7 @@ class lingkaran {
 };
 
 const bunder = new lingkaran();
-bunder.jariJari = 5;
+bunder.jariJari = 6;
 console.log('luas =', bunder.luas());
 console.log('keliling =', bunder.keliling());
 // bunder.keliling;

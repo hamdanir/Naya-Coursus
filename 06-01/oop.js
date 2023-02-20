@@ -30,7 +30,6 @@
 
 
 // penambahan cunstructor
-
 class lingkaran {
     constructor(jariJari) {
         this.jariJari = jariJari;
@@ -54,3 +53,32 @@ class persegi {
 const adudu = new persegi(2, 4);
 console.log('luas persegi =', adudu.luas());
 console.log('keliling persegi =', adudu.keliling());
+
+// Tugas 3 : fungsi extends
+console.group('Tugas Extends');
+
+class tabung extends lingkaran {
+    constructor(jariJari, tinggi) {
+        super(jariJari);
+        this.tinggi = tinggi;
+    }
+
+    volume = () => 3.14 * (this.jariJari ** 2) * this.tinggi
+};
+
+const kaleng = new tabung(2, 3);
+console.log('volume tabung =', kaleng.volume());
+
+class balok extends persegi {
+    constructor(panjang, lebar, tinggi) {
+        super(panjang, lebar);
+        this.tinggi = tinggi;
+    }
+
+    volume = () => this.panjang * this.lebar * this.tinggi
+
+};
+
+const kubus = new balok(2, 2, 5);
+console.log('volume balok =', kubus.volume());
+

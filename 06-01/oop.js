@@ -32,10 +32,13 @@
 // penambahan cunstructor
 class lingkaran {
     constructor(jariJari) {
-        this.jariJari = jariJari;
+        this.r = jariJari;
     }
-    luas = () => this.jariJari ** 2 * 3.14;
-    keliling = () => 3.14 * (this.jariJari + this.jariJari);
+
+
+
+    luas = () => this.r ** 2 * 3.14;
+    keliling = () => 3.14 * (this.r + this.r);
 };
 const bunder = new lingkaran(3);
 console.log('luas lingkaran =', bunder.luas());
@@ -50,7 +53,7 @@ class persegi {
     luas = () => this.panjang * this.lebar;
     keliling = () => (this.panjang + this.lebar) * 2;
 };
-const adudu = new persegi(2, 4);
+const adudu = new persegi(2, 2);
 console.log('luas persegi =', adudu.luas());
 console.log('keliling persegi =', adudu.keliling());
 
@@ -82,3 +85,4 @@ class balok extends persegi {
 const kubus = new balok(2, 2, 5);
 console.log('volume balok =', kubus.volume());
 
+console.groupEnd();

@@ -27,14 +27,14 @@ const pembagi = (a, b) => {
                 const err = new Error('Inputan tidak boleh 0!');
                 err.name = pembagiError;
                 reject(err);
-            }, 4000)
+            }, 4 * 1000) // 1000 = 1s
         }
         else if (typeof a !== 'number' || typeof b !== 'number') {
             setTimeout(() => {
                 const err = new Error('Inputan harus Angka!!');
                 err.name = inputanError;
                 reject(err);
-            }, 2000)
+            }, 2 * 1000) // 1000 = 1s
         }
         else resolve(a / b)
 

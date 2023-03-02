@@ -20,7 +20,7 @@
 // }
 
 // console.table(coba)
-
+console.log(document.getElementById("mytable"));
 const table4 = document.getElementById("mytable");
 const data = [];
 // Ambil baris tabel di dalam elemen tbody
@@ -45,3 +45,8 @@ for (let i = 0; i < rows.length; i++) {
     data.push(rowData);
 }
 console.table(data);
+
+const h2 = document.querySelector('h2');
+h2.style = `text-align: center;
+            color: red;
+            font-size: 2.5rem;`

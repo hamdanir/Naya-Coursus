@@ -5,22 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>07-03</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="div1"></div>
-    <div>
-      <form id="form-login">
-        <div>
-          <label for="">Email</label>
-          <input type="text" id="email" />
-        </div>
-        <div>
-          <label for="">Password</label>
-          <input type="password" id="password" />
-        </div>
 
-        <button>Login</button>
-      </form>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="div1"></div>
+        <div>
+          <form id="form-login">
+            <table>
+              <div>
+                <tr>
+                  <td colspan="3" id="pesan"></td>
+                </tr>
+                <tr>
+                  <td class="label"><label for="">Email</label></td>
+                  <td>:</td>
+                  <td><input type="text" id="email" /></td>
+                </tr>
+              </div>
+              <div>
+                <tr>
+                  <td class="label"><label for="">Password</label></td>
+                  <td>:</td>
+                  <td><input type="password" id="password" /></td>
+                </tr>
+              </div>
+            </table>
+            <button>Login</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <script src="event.js"></script>

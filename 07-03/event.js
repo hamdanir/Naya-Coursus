@@ -1,22 +1,26 @@
 let email = '';
 let password = '';
 const div1 = document.querySelector('.div1')
+const pesan = document.querySelector('#pesan');
+const formLogin = document.querySelector('#form-login');
+const box = document.querySelector('.box');
 
 const berhasil = () => {
+    box.style = 'border:none;';
     formLogin.style = 'display:none';
-    const h1 = document.createElement('h1');
-    div1.appendChild(h1);
-    h1.innerHTML = 'SELAMAT DATANG';
+    const img = document.createElement('img');
+    div1.appendChild(img);
+    img.src = 'https://lzd-img-global.slatic.net/g/p/298a51d1094d8ae389eef0621d869246.png_720x720q80.png_.webp';
 };
 
 const gagal = () => {
     const p = document.createElement('p');
-    div1.appendChild(p);
+    pesan.appendChild(p);
     p.innerHTML = 'email atau password salah';
     p.style = 'color:red;'
 };
 
-const formLogin = document.querySelector('#form-login');
+
 formLogin.addEventListener('submit', evt => {
     evt.preventDefault();
 
